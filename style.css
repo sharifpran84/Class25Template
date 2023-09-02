@@ -1,0 +1,133 @@
+.bb{
+    position: relative;
+}
+.bb::before {
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    left: 46%;
+    width: 10%;
+    height: 3%;
+    background: #0d6efd;
+}
+.btn-1 {
+    background: #0d6efd;
+    color: white;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 9;
+    transition: .8s;
+}
+.btn-1:hover{
+    color: white !important;
+}
+.btn-1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #0d6efd;
+    z-index: -1;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .8s;
+}
+.btn-1:hover::after{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.card1{
+    transition: .8s;
+}
+.card1:hover{
+    background: #0d6efd;
+    color: white;
+}
+.card1:hover .btn-1{
+    background: white;
+    color: #0d6efd;
+}
+/* banner section */
+.bannerSection{
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5),rgba(0, 0, 255, 0.5)), url(./Img/free-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+}
+.btn-2 {
+    background: white;
+    color: #0d6efd;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 9;
+    transition: .8s;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.btn-2:hover{
+    color: white;
+    border: 1px solid white;
+}
+.btn-2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #0d6efd;
+    z-index: -1;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .8s;
+}
+.btn-2:hover::after{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.bb2{
+    position: relative;
+}
+.bb2::before {
+    content: "";
+    position: absolute;
+    bottom: 7%;
+    left: 37%;
+    width: 14%;
+    height: 2%;
+    background: white;
+}
+/* footer section */
+.E-mail {
+    width: 550px;
+    display: inline-block;
+    margin-top: 45px;
+    font-size: 25px;
+}
+.btn-4 {
+    border: 1px solid white;
+    padding: 4px 30px;
+    margin-top: -10px;
+    font-size: 30px;
+}
+.btn-3{
+    background: #0d6efd;
+    color: white;
+    width: 150px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 9;
+    transition: .8s;
+}
